@@ -12,10 +12,6 @@ const Api = {
   get() {
     return fetch(apiLink)
       .then(res => res.json())
-      .then(res => {
-        const nerds = res
-        return nerds
-      })
       .catch(err => {
         console.log(err)
       })
