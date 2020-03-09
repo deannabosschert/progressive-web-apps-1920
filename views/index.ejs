@@ -6,6 +6,8 @@
     <h1>nerds-overview</h1>
     <% nerds.forEach((nerd)=> { %>
     <article class="student">
+      <a href="/nerds/<%= nerd.owner.login%>">sedgvsdngvksd gkfj 
+      </a>
       <h3><% nerd.owner.login %></h3>
       <div class="avatarWrapper">
         <img class="avatar" id="avatar" src="<%= nerd.owner.avatar_url %>" alt="<%= nerd.full_name %>">
