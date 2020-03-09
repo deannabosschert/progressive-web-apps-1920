@@ -12,9 +12,18 @@ app.get('/', function(req, res) {
 })
 
 app.get('/nerds', function(req, res) {
-  Api.get().then(data => {
+  Api.get("overview").then(data => {
     res.render('index.ejs', {
       nerds: data
+    })
+  })
+})
+
+app.get('/nerds/:id', function(req, res) {
+  Api.get(req.params.id).then(data => {
+    console.log(data)
+    res.render('detail.ejs', {
+      nerd: data
     })
   })
 })
