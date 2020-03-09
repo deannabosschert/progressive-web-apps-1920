@@ -1,0 +1,52 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/header.ejs') %>
+
+<main>
+  <ul>
+    <li><a href="#/">Home</a></li>
+    <li><a href="#stats">Stats</a></li>
+  </ul>
+  <div class="sectionWrapper">
+    <section data-route="/" id="/src/" class="active">
+      <div id="overview">
+        <h1>nerds-overview</h1>
+        <% nerds.forEach(function(nerd) { %>
+        <article class="student">
+          <h3 class="projectName"><% nerd.owner.login %></h3>
+          <div class="avatarWrapper">
+            <img class="avatar" id="avatar" src="<%= nerd.owner.avatar_url %>" alt="<%= nerd.full_name %>">
+          </div>
+          <p class="description"><%= nerd.description %></p>
+          <p class="html_url"><%= nerd.html_url %></p>
+          <p class="homepage"><%= nerd.homepage %></p>
+          <p class="id"><%= nerd.id %></p>
+          <p class="private"><%= nerd.private %></p>
+          <p class="full_name"><%= nerd.full_name %></p>
+          <% }) %>
+        </article>
+      </div>
+    </section>
+  </div>
+  <a class="backToTop" href="#top">Back to top</a>
+</main>
+<!--
+<article class="student">
+  <h3 class="projectName"></h3>
+  <p class="description"></p>
+  <a class="html_url">
+    <div class="avatarWrapper">
+      <img class="avatar" id="avatar">
+    </div>
+    <p class="homepage"></p>
+  </a>
+  <p class="id"></p>
+  <p class="name"></p>
+  <p class="full_name"></p>
+  <p class="private"></p>
+  <a class="linkToProfile" href=""></a>
+</article> -->
+
+
+
+
+<%- include('./partials/foot.ejs') %>
