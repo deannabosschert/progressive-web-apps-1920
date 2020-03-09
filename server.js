@@ -1,15 +1,6 @@
 const express = require('express')
 const app = express()
-const fetch = require('node-fetch')
-
-const endpoint = "https://api.github.com"
-const minor = "/cmda-minor-web"
-const course = "/web-app-from-scratch-"
-const year = "1920"
-const tag = "/forks"
-const limit = "50"
-const apiLink = `${endpoint}/repos${minor}${course}${year}${tag}?per_page=${limit}`
-
+const Api = require('./modules/Api.js');
 
 
 app.use(express.static('./public'))
@@ -20,32 +11,48 @@ app.get('/', function(req, res) {
   res.redirect('/nerds')
 })
 
-app.get('/nerds', function(req, res) {
-  fetch(apiLink)
-    .then(res => {
-      return res.json()
-    })
-    .then(json => {
-      const data = json
-      res.render('index', {
-        nerds: data
-      })
-      // console.log(data[1].avatar_url)
-    })
+// app.get('/nerds', function(res, json) {
+//   Api.get()
+//   console.log(json)
+//   const data = json
+//   res.render('index', {
+//     nerds: data
+//   })
+// })
 
-    //
-    // .then(json => {
-    //   const nerds = json.results
-    //   console.log(nerds[1])
-    //   res.render('index', {
-    //     nerds: nerds
-    //   })
-    //   // Data.store(`${route}`, data)
-    // })
-    .catch(err => {
-      console.log(err)
+
+app.get('/nerds', function(req, res) {
+  Api.get().then(data => {
+    res.render('index.ejs', {
+      nerds: data
     })
+  })
 })
+
+// //
+// // app.get('/nerds', function(req, res, nerds) {
+// //   Api.get().then(res => {
+// //     // const nerds = JSON.parse(res)
+// //     // console.log(res)
+// //     // const nerds = res
+// //     // console.log(nerds)
+// //     res.render('index.ejs', {
+// //       nerds: res
+// //     })
+//
+//
+//
+//     // console.log(data)
+//     // request(function(error, response, body) {
+//     // const data = JSON.parse(data);
+//     // res.render('index.ejs', {
+//     // nerds: data
+//     // })
+//     // })
+//   })
+// })
+
+
 //
 // const API = {
 //   get: (route) => {
