@@ -15,8 +15,9 @@ app.get('/', function(req, res) {
   })
 })
 
-app.get('/course/:courseName', function(req, res) {
-  Api.get("course", req.params.courseName).then(data => {
+app.get('/course/:id', function(req, res) {
+  console.log(req.params.id)
+  Api.get("course", req.params.id).then(data => {
     res.render('course.ejs', {
       nerds: data
     })
