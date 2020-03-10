@@ -40,25 +40,11 @@ app.get('/nerds/:id/:repo', function(req, res) {
 
   Api.get("nerdRepo", nerdId, repo).then(data => {
     console.log(data)
-    // const user = data[1].owner.login
     res.render('nerdRepo.ejs', {
       nerd: data
-      // userName: user
     })
   })
 })
-
-//
-// app.get('/nerds/:id/:repo', function(req, res) {
-//   const repo = req.params.repo
-//   const nerdId = req.params.id
-//   Api.get(nerdId, repo).then(data => {
-//     res.render('detail.ejs', {
-//       nerd: data
-//     })
-//   })
-// })
-
 
 // app.get('/search', function(req, res) {
 //   request(host + req.params.id, function(error, response, body) {
