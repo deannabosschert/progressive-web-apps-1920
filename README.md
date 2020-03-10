@@ -1,6 +1,6 @@
 # Progressive Web Apps @cmda-minor-web · 2019-2020
 
-In this course we will convert the client side web application previously made at the OBA into a server side rendered application. We also add functionalities based on the Service Worker and turn the application into a Progressive Web App. Ultimately we are going to implement a series of optimisations to improve the performance of the application.  
+In this course we will convert the client side web application previously made at the OBA (OR during WAFS) into a server side rendered application. We also add functionalities based on the Service Worker and turn the application into a Progressive Web App. Ultimately we are going to implement a series of optimisations to improve the performance of the application.  
 
 ## Learning goals
 - _You understand the difference between client side and server side rendering and you can apply server side rendering
@@ -29,7 +29,7 @@ Goals: Convert application to a Progressive Web App
 [Slides](...)
 
 
-### Week 2 - Critical Rendering Path 📉 
+### Week 3 - Critical Rendering Path 📉 
 
 Doel: Optimize the Critical Rendering Path   
 [Opdrachten](https://github.com/cmda-minor-web/progressive-web-apps-1920/blob/master/course/week-3.md)  
