@@ -10,11 +10,11 @@ const Api = {
   get(route, repo) {
     const query = getQuery(route, repo)
     const apiLink = `${endpoint}${query}?per_page=${limit}`
-    console.log(apiLink)
+    // console.log(apiLink)
     return fetch(apiLink)
       .then(res => res.json())
       .then((json) => {
-        console.log(json[0])
+        // console.log(json[0])
         // const data = cleanData(json)
         return json
       })
@@ -42,19 +42,25 @@ function getQuery(route, repo) {
   if (route === "home") {
     const query = "users/cmda-minor-web/repos"
     return query
-  }
-  if (route === "course") {
+  } else if (route === "course") {
     const query = `repos/cmda-minor-web/${repo}/forks`
-    console.log(query)
+    // console.log(query)
+    return query
+  } else if (route === "nerdProfile") {
+    const query = `users/${repo}/repos`
+    // console.log(query)
     return query
   } else {
-    const query = `repos/${repo}/${route}`
-    console.log(query)
+    const query = `repos/${route}/${repo}`
+    // console.log(query)
     // GET / repos /: owner /: repo
+    // https: //api.github.com/users/aaraar/undefined?per_page=50
 
     return query
   }
 }
+
+
 
 //
 // function getTag(route) {
