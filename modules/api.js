@@ -10,10 +10,11 @@ const Api = {
   get(route, repo) {
     const query = getQuery(route, repo)
     const apiLink = `${endpoint}${query}?per_page=${limit}`
+    console.log(apiLink)
     return fetch(apiLink)
       .then(res => res.json())
       .then((json) => {
-        console.log(json)
+        console.log(json[0])
         // const data = cleanData(json)
         return json
       })
@@ -43,10 +44,12 @@ function getQuery(route, repo) {
     return query
   }
   if (route === "course") {
-    const query = `/repos/cmda-minor-web/${repo}/forks`
+    const query = `repos/cmda-minor-web/${repo}/forks`
+    console.log(query)
     return query
   } else {
-    const query = `/repos/${route}/${repo}`
+    const query = `repos/${repo}/${route}`
+    console.log(query)
     // GET / repos /: owner /: repo
 
     return query
