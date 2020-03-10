@@ -1,6 +1,6 @@
 # Class of 2020
 ## Progressive Web Apps @cmda-minor-web 1920
-www.progressivewebapps.netlify.com
+https://progressivewebapps.netlify.com
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e56a09e1-89a2-48f3-bd77-6247d77caa09/deploy-status)](https://app.netlify.com/sites/progressivewebapps/deploys)
 
