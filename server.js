@@ -2,42 +2,64 @@ const express = require('express')
 const app = express()
 const Api = require('./modules/Api.js');
 
-
 app.use(express.static('./public'))
 app.set('view engine', 'ejs')
 app.set('views', './views')
 
 app.get('/', function(req, res) {
-  res.redirect('/nerds')
+  Api.get("home", "cmda-minor-web").then(data => {
+    res.render('index.ejs', {
+      repos: data
+    })
+  })
 })
 
-app.get('/nerds', function(req, res) {
-  Api.get("overview").then(data => {
-    res.render('index.ejs', {
+app.get('/course/:repo', function(req, res) {
+  const repo = req.params.repo
+  Api.get("course", "cmda-minor-web", repo).then(data => {
+    res.render('course.ejs', {
       nerds: data
     })
   })
 })
 
 app.get('/nerds/:id', function(req, res) {
-  Api.get(req.params.id).then(data => {
-    console.log(data)
-    res.render('detail.ejs', {
-      nerd: data
+  const nerdId = req.params.id
+  Api.get("nerdProfile", nerdId).then(data => {
+    const user = data[1].owner.login
+    res.render('nerd.ejs', {
+      nerd: data,
+      userName: user
     })
   })
 })
 
+app.get('/nerds/:id/:repo', function(req, res) {
+  const nerdId = req.params.id
+  const repo = req.params.repo
 
-// app.get('/stories/:id', function(req, res) {
-//   request(host + req.params.id, function(error, response, body) {
-//     const data = JSON.parse(body)
+  Api.get("nerdRepo", nerdId, repo).then(data => {
+    console.log(data)
+    // const user = data[1].owner.login
+    res.render('nerdRepo.ejs', {
+      nerd: data
+      // userName: user
+    })
+  })
+})
+
+//
+// app.get('/nerds/:id/:repo', function(req, res) {
+//   const repo = req.params.repo
+//   const nerdId = req.params.id
+//   Api.get(nerdId, repo).then(data => {
 //     res.render('detail.ejs', {
-//       story: data
+//       nerd: data
 //     })
 //   })
 // })
-//
+
+
 // app.get('/search', function(req, res) {
 //   request(host + req.params.id, function(error, response, body) {
 //     const data = JSON.parse(body)
@@ -47,6 +69,6 @@ app.get('/nerds/:id', function(req, res) {
 //   })
 // })
 
-const server = app.listen(1337, function() {
-  console.log('server is running on port 1337')
+const server = app.listen(8000, function() {
+  console.log('server is running on port 8000')
 })
