@@ -29,15 +29,6 @@ app.get('/nerds/:id', function(req, res) {
 })
 
 
-// app.get('/stories/:id', function(req, res) {
-//   request(host + req.params.id, function(error, response, body) {
-//     const data = JSON.parse(body)
-//     res.render('detail.ejs', {
-//       story: data
-//     })
-//   })
-// })
-//
 // app.get('/search', function(req, res) {
 //   request(host + req.params.id, function(error, response, body) {
 //     const data = JSON.parse(body)
@@ -47,6 +38,6 @@ app.get('/nerds/:id', function(req, res) {
 //   })
 // })
 
-const server = app.listen(1337, function() {
-  console.log('server is running on port 1337')
+const server = app.listen(8000, function() {
+  console.log('server is running on port 8000')
 })
