@@ -349,10 +349,11 @@ Goal: Optimize the Critical Rendering Path
 
 </details>
 
-### Rubric
+### [Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vSc48v1nrjcwH0llcTd68xyK7f2fDC2UL4d6h4ZNW3DU8ucez6ZOHiId1XSX0RP5ByvLC8p5pVUGZT4/pubhtml)
 
 [Rubric- detailed rating of my project](https://github.com/deannabosschert/progressive-web-apps-1920/wiki/Rubric)
-![rubric](https://github.com/deannabosschert/progressive-web-apps-1920/blob/master/src/img/rubric.png)
+![screenshot of rubric](https://paper-attachments.dropbox.com/s_A55BA87DF43E0052AB57F649BA137E30CE3E70844B24A22C6154EAF552B93169_1583836131204_Screenshot+2020-03-10+at+11.28.29.png)
+
 
 ## ℹ️ Resources
 https://developer.github.com/v3/
