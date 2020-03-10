@@ -67,10 +67,10 @@ Clone this repository to your own device:
 ```bash
 $ git clone https://github.com/deannabosschert/progressive-web-apps-1920.git
 ```
-Then, navigate to this folder and run:
+Then, navigate to that folder and run:
 
 ```bash
-npm run start`
+npm run start
 ```
 
 #### Helpers
