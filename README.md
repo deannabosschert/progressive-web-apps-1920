@@ -1,6 +1,6 @@
 # Class of 2020
-## Web App From Scratch @cmda-minor-web 1920
-progressivewebapps.netlify.com
+## Progressive Web Apps @cmda-minor-web 1920
+www.progressivewebapps.netlify.com
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e56a09e1-89a2-48f3-bd77-6247d77caa09/deploy-status)](https://app.netlify.com/sites/progressivewebapps/deploys)
 
@@ -188,7 +188,7 @@ type: "User"
 site_admin: false
 __proto__: Object
 html_url: "https://github.com/deannabosschert/progressive-web-apps-1920"
-description: "Web App From Scratch @cmda-minor-web 1920"
+description: "Progressive Web Apps @cmda-minor-web 1920"
 fork: true
 url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920"
 forks_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/forks"
@@ -282,9 +282,9 @@ function filterArray(array) {
 Result:
 ```json
 {
-name: "progressive-web-apps-1920", description: "Web App From Scratch @cmda-minor-web 1920", avatar: "https://avatars1.githubusercontent.com/u/36165810?v=4", homepage: "https://deannabosschert.github.io/progressive-web-apps-1920/src", id: 237659708, …}
+name: "progressive-web-apps-1920", description: "Progressive Web Apps @cmda-minor-web 1920", avatar: "https://avatars1.githubusercontent.com/u/36165810?v=4", homepage: "https://deannabosschert.github.io/progressive-web-apps-1920/src", id: 237659708, …}
 name: "progressive-web-apps-1920"
-description: "Web App From Scratch @cmda-minor-web 1920"
+description: "Progressive Web Apps @cmda-minor-web 1920"
 avatar: "https://avatars1.githubusercontent.com/u/36165810?v=4"
 homepage: "https://deannabosschert.github.io/progressive-web-apps-1920/src"
 id: 237659708
@@ -363,7 +363,6 @@ https://developer.github.com/v3/
 - 
 
 ### Small inspiration sources
-- 
 
 ## 🗺️ License
 
