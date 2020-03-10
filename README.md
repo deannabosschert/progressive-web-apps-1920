@@ -164,8 +164,8 @@ If you *are* authenticated, you should be able to receive the following data:
 {
   id: 237659708
 node_id: "MDEwOlJlcG9zaXRvcnkyMzc2NTk3MDg="
-name: "web-app-from-scratch-1920"
-full_name: "deannabosschert/web-app-from-scratch-1920"
+name: "progressive-web-apps-1920"
+full_name: "deannabosschert/progressive-web-apps-1920"
 private: false
 owner:
 login: "deannabosschert"
@@ -187,54 +187,54 @@ received_events_url: "https://api.github.com/users/deannabosschert/received_even
 type: "User"
 site_admin: false
 __proto__: Object
-html_url: "https://github.com/deannabosschert/web-app-from-scratch-1920"
+html_url: "https://github.com/deannabosschert/progressive-web-apps-1920"
 description: "Web App From Scratch @cmda-minor-web 1920"
 fork: true
-url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920"
-forks_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/forks"
-keys_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/keys{/key_id}"
-collaborators_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/collaborators{/collaborator}"
-teams_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/teams"
-hooks_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/hooks"
-issue_events_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/issues/events{/number}"
-events_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/events"
-assignees_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/assignees{/user}"
-branches_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/branches{/branch}"
-tags_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/tags"
-blobs_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/git/blobs{/sha}"
-git_tags_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/git/tags{/sha}"
-git_refs_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/git/refs{/sha}"
-trees_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/git/trees{/sha}"
-statuses_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/statuses/{sha}"
-languages_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/languages"
-stargazers_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/stargazers"
-contributors_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/contributors"
-subscribers_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/subscribers"
-subscription_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/subscription"
-commits_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/commits{/sha}"
-git_commits_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/git/commits{/sha}"
-comments_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/comments{/number}"
-issue_comment_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/issues/comments{/number}"
-contents_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/contents/{+path}"
-compare_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/compare/{base}...{head}"
-merges_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/merges"
-archive_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/{archive_format}{/ref}"
-downloads_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/downloads"
-issues_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/issues{/number}"
-pulls_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/pulls{/number}"
-milestones_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/milestones{/number}"
-notifications_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/notifications{?since,all,participating}"
-labels_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/labels{/name}"
-releases_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/releases{/id}"
-deployments_url: "https://api.github.com/repos/deannabosschert/web-app-from-scratch-1920/deployments"
+url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920"
+forks_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/forks"
+keys_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/keys{/key_id}"
+collaborators_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/collaborators{/collaborator}"
+teams_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/teams"
+hooks_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/hooks"
+issue_events_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/issues/events{/number}"
+events_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/events"
+assignees_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/assignees{/user}"
+branches_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/branches{/branch}"
+tags_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/tags"
+blobs_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/git/blobs{/sha}"
+git_tags_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/git/tags{/sha}"
+git_refs_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/git/refs{/sha}"
+trees_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/git/trees{/sha}"
+statuses_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/statuses/{sha}"
+languages_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/languages"
+stargazers_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/stargazers"
+contributors_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/contributors"
+subscribers_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/subscribers"
+subscription_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/subscription"
+commits_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/commits{/sha}"
+git_commits_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/git/commits{/sha}"
+comments_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/comments{/number}"
+issue_comment_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/issues/comments{/number}"
+contents_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/contents/{+path}"
+compare_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/compare/{base}...{head}"
+merges_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/merges"
+archive_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/{archive_format}{/ref}"
+downloads_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/downloads"
+issues_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/issues{/number}"
+pulls_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/pulls{/number}"
+milestones_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/milestones{/number}"
+notifications_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/notifications{?since,all,participating}"
+labels_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/labels{/name}"
+releases_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/releases{/id}"
+deployments_url: "https://api.github.com/repos/deannabosschert/progressive-web-apps-1920/deployments"
 created_at: "2020-02-01T18:36:35Z"
 updated_at: "2020-02-26T23:46:05Z"
 pushed_at: "2020-02-26T23:54:29Z"
-git_url: "git://github.com/deannabosschert/web-app-from-scratch-1920.git"
-ssh_url: "git@github.com:deannabosschert/web-app-from-scratch-1920.git"
-clone_url: "https://github.com/deannabosschert/web-app-from-scratch-1920.git"
-svn_url: "https://github.com/deannabosschert/web-app-from-scratch-1920"
-homepage: "https://deannabosschert.github.io/web-app-from-scratch-1920/src"
+git_url: "git://github.com/deannabosschert/progressive-web-apps-1920.git"
+ssh_url: "git@github.com:deannabosschert/progressive-web-apps-1920.git"
+clone_url: "https://github.com/deannabosschert/progressive-web-apps-1920.git"
+svn_url: "https://github.com/deannabosschert/progressive-web-apps-1920"
+homepage: "https://deannabosschert.github.io/progressive-web-apps-1920/src"
 size: 4070
 stargazers_count: 0
 watchers_count: 0
@@ -282,17 +282,17 @@ function filterArray(array) {
 Result:
 ```json
 {
-name: "web-app-from-scratch-1920", description: "Web App From Scratch @cmda-minor-web 1920", avatar: "https://avatars1.githubusercontent.com/u/36165810?v=4", homepage: "https://deannabosschert.github.io/web-app-from-scratch-1920/src", id: 237659708, …}
-name: "web-app-from-scratch-1920"
+name: "progressive-web-apps-1920", description: "Web App From Scratch @cmda-minor-web 1920", avatar: "https://avatars1.githubusercontent.com/u/36165810?v=4", homepage: "https://deannabosschert.github.io/progressive-web-apps-1920/src", id: 237659708, …}
+name: "progressive-web-apps-1920"
 description: "Web App From Scratch @cmda-minor-web 1920"
 avatar: "https://avatars1.githubusercontent.com/u/36165810?v=4"
-homepage: "https://deannabosschert.github.io/web-app-from-scratch-1920/src"
+homepage: "https://deannabosschert.github.io/progressive-web-apps-1920/src"
 id: 237659708
 node_id: "MDEwOlJlcG9zaXRvcnkyMzc2NTk3MDg="
-full_name: "deannabosschert/web-app-from-scratch-1920"
+full_name: "deannabosschert/progressive-web-apps-1920"
 private: false
 owner: {login: "deannabosschert", id: 36165810, node_id: "MDQ6VXNlcjM2MTY1ODEw", avatar_url: "https://avatars1.githubusercontent.com/u/36165810?v=4", gravatar_id: "", …}
-html_url: "https://github.com/deannabosschert/web-app-from-scratch-1920"
+html_url: "https://github.com/deannabosschert/progressive-web-apps-1920"
 __proto__: Object
 }
 ```
@@ -363,6 +363,7 @@ https://developer.github.com/v3/
 - 
 
 ### Small inspiration sources
+- 
 
 ## 🗺️ License
 
