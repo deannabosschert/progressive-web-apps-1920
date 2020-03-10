@@ -3,11 +3,11 @@
 
 <main>
   <div id="overview">
-    <h1>Profiel</h1>
+    <h1>Profiel voor <% nerd.name %><</h1>
     <article class="student">
-      <h3><% nerd.owner.login %></h3>
+      <h3><% nerd.courseName %></h3>
       <div class="avatarWrapper">
-        <img class="avatar" id="avatar" src="<%= nerd.owner.avatar_url %>" alt="<%= nerd.full_name %>">
+        <img class="avatar" id="avatar" src="<%= nerd.avatar %>" alt="<%= nerd.full_name %>">
       </div>
       <p><%= nerd.description %></p>
       <p><%= nerd.html_url %></p>
