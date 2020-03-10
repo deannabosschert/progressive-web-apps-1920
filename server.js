@@ -8,20 +8,24 @@ app.set('view engine', 'ejs')
 app.set('views', './views')
 
 app.get('/', function(req, res) {
-  res.redirect('/nerds')
+  Api.get("home").then(data => {
+    res.render('index.ejs', {
+      repos: data
+    })
+  })
 })
 
-app.get('/nerds', function(req, res) {
-  Api.get("overview").then(data => {
-    res.render('index.ejs', {
+app.get('/course/:courseName', function(req, res) {
+  Api.get("course", req.params.courseName).then(data => {
+    res.render('course.ejs', {
       nerds: data
     })
   })
 })
 
 app.get('/nerds/:id', function(req, res) {
+  console.log(req.params.id)
   Api.get(req.params.id).then(data => {
-    console.log(data)
     res.render('detail.ejs', {
       nerd: data
     })
