@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const Api = require('./modules/Api.js');
 
-
 app.use(express.static('./public'))
 app.set('view engine', 'ejs')
 app.set('views', './views')
@@ -15,9 +14,9 @@ app.get('/', function(req, res) {
   })
 })
 
-app.get('/course/:id', function(req, res) {
-  console.log(req.params.id)
-  Api.get("course", req.params.id).then(data => {
+app.get('/course/:repo', function(req, res) {
+  const repo = req.params.repo
+  Api.get("course", repo).then(data => {
     res.render('course.ejs', {
       nerds: data
     })
@@ -25,13 +24,26 @@ app.get('/course/:id', function(req, res) {
 })
 
 app.get('/nerds/:id', function(req, res) {
-  console.log(req.params.id)
-  Api.get(req.params.id).then(data => {
-    res.render('detail.ejs', {
-      nerd: data
+  const nerdId = req.params.id
+  Api.get("nerdProfile", nerdId).then(data => {
+    const user = data[1].owner.login
+    res.render('nerd.ejs', {
+      nerd: data,
+      userName: user
     })
   })
 })
+
+//
+// app.get('/nerds/:id/:repo', function(req, res) {
+//   const repo = req.params.repo
+//   const nerdId = req.params.id
+//   Api.get(nerdId, repo).then(data => {
+//     res.render('detail.ejs', {
+//       nerd: data
+//     })
+//   })
+// })
 
 
 // app.get('/search', function(req, res) {
