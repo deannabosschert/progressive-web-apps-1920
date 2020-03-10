@@ -7,10 +7,10 @@ const limit = "50"
 // const repo = `${course}${year}`
 // const apiLink = `${endpoint}/repos${owner}${repo}?per_page=${limit}`
 const Api = {
-  get(route, repo) {
-    const query = getQuery(route, repo)
+  get(page, user, repo) {
+    const query = getQuery(page, user, repo)
     const apiLink = `${endpoint}${query}?per_page=${limit}`
-    // console.log(apiLink)
+    console.log(apiLink)
     return fetch(apiLink)
       .then(res => res.json())
       .then((json) => {
@@ -25,49 +25,49 @@ const Api = {
 }
 
 //
-// function getOwner(route) {
-//   if (route === "overview") {
+// function getOwner(page) {
+//   if (page === "overview") {
 //     const owner = "cmda-minor-web"
 //     return owner
-//   } else if (route === "/") {
+//   } else if (page === "/") {
 //     const owner = "cmda-minor-web"
 //     return owner
 //   } else {
-//     const owner = `${route}`
+//     const owner = `${page}`
 //     return owner
 //   }
 // }
 
-function getQuery(route, repo) {
-  if (route === "home") {
-    const query = "users/cmda-minor-web/repos"
+function getQuery(page, user, repo) {
+  if (page === "home") {
+    const query = `users/${user}/repos`
     return query
-  } else if (route === "course") {
-    const query = `repos/cmda-minor-web/${repo}/forks`
+  } else if (page === "course") {
+    const query = `repos/${user}/${repo}/forks`
     // console.log(query)
     return query
-  } else if (route === "nerdProfile") {
-    const query = `users/${repo}/repos`
-    // console.log(query)
+  } else if (page === "nerdProfile") {
+    const query = `users/${user}/repos`
+    // https://api.github.com/users/deannabosschert/repos?per_page=50
     return query
-  } else {
-    const query = `repos/${route}/${repo}`
-    // console.log(query)
-    // GET / repos /: owner /: repo
-    // https: //api.github.com/users/aaraar/undefined?per_page=50
+  } else if (page === "nerdRepo") {
+    const query = `repos/${user}/${repo}`
+    // https://api.github.com/repos/deannabosschert/progressive-web-apps-1920?per_page=50
 
     return query
+  } else {
+    console.log(err)
   }
 }
 
 
 
 //
-// function getTag(route) {
-//   if (route === "overview") {
+// function getTag(page) {
+//   if (page === "overview") {
 //     const tag = "/forks"
 //     return tag
-//   } else if (route === "/") {
+//   } else if (page === "/") {
 //     const owner = ""
 //     return owner
 //   } else {
