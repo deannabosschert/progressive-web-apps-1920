@@ -7,7 +7,7 @@ app.set('view engine', 'ejs')
 app.set('views', './views')
 
 app.get('/', function(req, res) {
-  Api.get("home").then(data => {
+  Api.get("home", "cmda-minor-web").then(data => {
     res.render('index.ejs', {
       repos: data
     })
@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
 
 app.get('/course/:repo', function(req, res) {
   const repo = req.params.repo
-  Api.get("course", repo).then(data => {
+  Api.get("course", "cmda-minor-web", repo).then(data => {
     res.render('course.ejs', {
       nerds: data
     })
@@ -30,6 +30,20 @@ app.get('/nerds/:id', function(req, res) {
     res.render('nerd.ejs', {
       nerd: data,
       userName: user
+    })
+  })
+})
+
+app.get('/nerds/:id/:repo', function(req, res) {
+  const nerdId = req.params.id
+  const repo = req.params.repo
+
+  Api.get("nerdRepo", nerdId, repo).then(data => {
+    console.log(data)
+    // const user = data[1].owner.login
+    res.render('nerdRepo.ejs', {
+      nerd: data
+      // userName: user
     })
   })
 })
