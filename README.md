@@ -55,7 +55,8 @@ https://progressivewebapps.netlify.com
 ## ✅ To-do
 - [ ] Add search
 - [ ] Add CSS, implement CSS grid
-- [ ] Add division betweenn homepage and overview per course
+- [ ] Add division between homepage and overview per course
+
 
 ## 📋 Concept
 _What does your app do, what is the goal? (passing butter)_ 
@@ -326,6 +327,7 @@ _What would you like to add (feature wishlist / backlog)?_
 - [ ] Showing stats about the implementation of certain things (who uses branches, pushes enough commits, has a wiki, has a license added etc)
 - [ ] Who's where in the curriculum? (check presence of 'routing', 'templating', 'modules' etc.)
 - [ ] Who uses micro libraries, and who's a supernerd and e.g. writes their own virtual DOM or router?
+- [ ] Run audits and generate stats per website based on this? Does Google have an option for this maybe, some kind of Lighthouse API?
 
 ## 🏫 Assignment
 <details>
