@@ -37,7 +37,6 @@ app.get('/nerds/:id', function(req, res) {
 app.get('/nerds/:id/:repo', function(req, res) {
   const nerdId = req.params.id
   const repo = req.params.repo
-
   Api.get("nerdRepo", nerdId, repo).then(data => {
     console.log(data)
     res.render('nerdRepo.ejs', {
@@ -47,10 +46,12 @@ app.get('/nerds/:id/:repo', function(req, res) {
 })
 
 // app.get('/search', function(req, res) {
-//   request(host + req.params.id, function(error, response, body) {
-//     const data = JSON.parse(body)
-//     res.render('detail.ejs', {
-//       story: data
+//   [hier iets met checken wat er gezocht wordt]
+//   Api.get("nerdProfile", nerdId).then(data => {
+//     const user = data[1].owner.login
+//     res.render('nerd.ejs', {
+//       nerd: data,
+//       userName: user
 //     })
 //   })
 // })
