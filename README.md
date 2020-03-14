@@ -54,8 +54,9 @@ https://progressivewebapps.netlify.com
 
 ## ✅ To-do
 - [ ] Add search
-- [ ] Add CSS, implement CSS grid
-- [ ] Add division between homepage and overview per course
+- [ ] Add CSS, implement CSS grid (super wonky styling right now, if not at all, sorry..)
+- [ ] Render meaningful content per view
+- [ ] Follow assignment
 
 
 ## 📋 Concept
@@ -89,15 +90,17 @@ _Which actors are there in your application? (actor diagram)_
 _How does flowed interaction through the application? (interaction diagram)_
 ![interaction diagram](https://github.com/deannabosschert/progressive-web-apps-1920/blob/master/src/img/interactiondiagram.png)
 
-- Homepage
-- Overview
-- Detail page
+- Homepage (all courses)
+- Course (overview of all students/project in that course)
+- Student profile
+- Student detail- page per repo
 
 ## 🌍 Design patterns
 Not sure, but I think those count:
 - The usage of Modules?
 - The usage of .map .filter .reduce?
 - My 'filterArray'-function?
+- Incoming: Service Worker
 
 ## 👍🏽 Best practices
 - Work in branches, even if it's a one-man project. It helps staying focused on one feature until it's finished, and keeps your from doing 10 different things at the same time. Saves you merge conflicts, too.
@@ -124,10 +127,10 @@ Not sure, but I think those count:
 _What external data source is featured in your project and what are its properties?_ 
 The API I've used is [Github's](https://api.github.com).
 
-I'm using this API to fetch data of the repositories that are forked from _cmda-minor-web/progressive-web-apps-1920_.
+I'm using this API to fetch data of the repositories that are forked from _cmda-minor-web_.
 
 #### Properties
-The endpoint I'm using on the overview page is the following:
+The endpoint I'm using on the PWA-course page is the following:
 `https://api.github.com/repos/cmda-minor-web/progressive-web-apps-1920/forks?per_page=50`
 
 Base URL: `${endpoint}/repos${minor}${course}${year}${tag}?per_page=${limit}`
