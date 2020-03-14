@@ -3,7 +3,7 @@
 <%- include('./partials/header.ejs') %>
 
 <main>
-  <div id="overview">
+  <section class="overview">
     <h1>All courses</h1>
     <% repos.forEach((repo)=> { %>
     <article class="student">
@@ -21,9 +21,7 @@
       <p><%= repo.full_name %></p>
       <% }) %>
     </article>
-  </div>
-
-  <a class="backToTop" href="#top">Back to top</a>
+  </section>
 </main>
 
 <%- include('./partials/foot.ejs') %>
